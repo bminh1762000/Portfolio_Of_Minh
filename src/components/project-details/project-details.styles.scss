@@ -1,0 +1,49 @@
+.details-center{
+   width: 90vw;
+   max-width: 80rem;
+   margin: 0 auto;
+
+   .titles{
+      text-align: center;
+
+      h1{
+         margin: 0;
+         font-size: 2.8rem;
+      }
+
+      h2{
+         margin: 0;
+         font-size: 2rem;
+      }
+   }
+
+   .details-items{
+      display: flex;
+      flex-direction: column;
+
+      .item{
+         width: 20%;
+         margin: 1rem 0;
+         padding: 0.5rem 1rem;
+         background: #dae2ec;
+         color: #617d98;
+         text-transform: uppercase;
+      }
+   }
+   
+   .details-content{
+      text-align: left;
+      background-color: #ffeaa7;
+      padding: 1rem;
+      margin: 1.5rem 0;
+   }
+
+   .details-image{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 14rem;
+      height: 14rem;
+      border-radius: 0.25rem;
+   }
+}
