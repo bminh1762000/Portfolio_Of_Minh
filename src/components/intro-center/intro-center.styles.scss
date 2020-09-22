@@ -1,0 +1,32 @@
+.intro-center {
+  width: 90vw;
+  max-width: 80rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .intro-image {
+    width: 50%;
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50% 0% 0% 50%;
+  }
+}
+
+@media screen and (max-width : 768px){
+  .intro-center{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .intro-image{
+      display: none;
+
+    }
+  }
+}

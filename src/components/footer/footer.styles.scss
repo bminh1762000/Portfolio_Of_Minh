@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 15, 15);
+
+  .social{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0;
+   margin-top: 1.5rem;
+   margin-bottom: 1rem;
+
+   li{
+      margin-right: 1rem;
+   
+      a {
+         display: inline-block;
+         text-decoration: none;
+         font-size: 0.85rem;
+         padding-right: 1rem;
+         color: white;
+         transition: all 0.5s linear;
+      }
+
+      &:hover{
+         a {
+          color: #2caeba;
+         }
+      }
+   }
+ }
+  .copy-right{
+      color: white;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      margin-top : 0.3rem;
+
+      span{
+         color: #2caeba;
+      }
+  }
+}

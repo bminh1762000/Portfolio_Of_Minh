@@ -1,0 +1,108 @@
+.job-center{
+   width: 90vw;
+   max-width: 80rem;
+   margin: 0 auto;
+
+   .job-info{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 4rem;
+
+      .job-btn{
+         background: transparent;
+         border-color: transparent;
+         text-transform: capitalize;
+         font-size: 1.25rem;
+         letter-spacing: 0.2rem;
+         margin: 0 .5rem;
+         transition: all 0.3s linear;
+         cursor: pointer;
+         padding: .3rem 0;
+         line-height: 1;
+
+         &:hover{
+            box-shadow: 0 2px #2caeba;
+            color: #2caeba;
+         }
+
+         &.active-btn{
+            box-shadow: 0px 2px #2caeba;
+            color: #2caeba;
+         }
+      }
+   }
+
+   .job-details{
+      text-align: left;
+
+      h3{
+         font-weight: 400;
+      }
+
+      h4{
+         text-transform: uppercase;
+         color: #617d98;
+         background: #dae2ec;
+         display: inline-block;
+         padding: .375rem .75rem;
+         border-radius: 0.25rem;
+         font-size: 1.05rem;
+         letter-spacing: 0.2rem;
+         font-weight: 600;
+      }
+
+      .job-date {
+         letter-spacing: 0.2rem;
+         font-weight: 300;
+         font-size: 0.975rem;
+      }
+
+      .job-desc{
+         display: grid;
+         grid-template-columns: auto 1fr;
+         -webkit-column-gap: 2rem;
+         column-gap: 2rem;
+         align-items: center;
+         margin-bottom: 1.25rem;
+
+         p {
+            padding: 0.5rem;
+            margin-bottom : 0;
+            color : black;
+         }
+
+         .icon{
+            color: #2caeba;
+         }
+      }
+   }
+}
+
+@media screen and (min-width : 992px) {
+   .job-center{
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      -webkit-column-gap: 4rem;
+      column-gap: 4rem;
+
+      .job-info{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+
+         .job-btn{
+            margin-bottom: 1rem;
+
+            &:hover{
+               box-shadow: -2px 0 #2caeba;
+            }
+
+            &.active-btn{
+               box-shadow: -2px 0px #2caeba;
+               color: #2caeba;
+            }
+         }
+      }
+   }
+}

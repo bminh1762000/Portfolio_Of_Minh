@@ -1,0 +1,38 @@
+.card-service {
+   
+   display: flex;
+   flex-direction: column;
+   background: white ;
+   padding: 3rem 1.5rem;
+   margin-bottom: 2rem ;
+   transition: 0.5s ;
+
+   &:hover {
+      background-color: #2caeba;
+      color : white;
+
+      .under-line{
+         background: white;
+      }
+   }
+
+   .under-line{
+      width: 3rem;
+      height: .1rem;
+      margin-bottom: 1.25rem;
+      background: #2caeba;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .icon{
+      margin-bottom : 2rem;
+   }
+
+}
+
+@media screen and (min-width : 992px){
+   .card-service{
+      font-size: 1rem;
+   }
+}

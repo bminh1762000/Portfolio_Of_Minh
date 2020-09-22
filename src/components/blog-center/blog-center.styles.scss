@@ -1,0 +1,23 @@
+.blog-center {
+  width: 90vw;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-center {
+    width: 95vw;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 426px) {
+      width: 98vw;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

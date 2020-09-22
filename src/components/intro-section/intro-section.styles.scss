@@ -1,0 +1,9 @@
+.section.intro{
+   background-image: linear-gradient( 89.2deg,  rgba(191,241,236,1) 22.3%, rgba(109,192,236,1) 84.1% );
+   height: 90vh;
+   margin: 0;
+
+   @media screen and (max-width: 768px){
+     height: 70vh;
+   }
+ }

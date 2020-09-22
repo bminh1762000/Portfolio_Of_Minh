@@ -1,0 +1,13 @@
+.section {
+   padding: 5rem 0;
+   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+   &.job{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 0 auto;
+   }
+}
